@@ -9,16 +9,12 @@ TODO: Delete this and the text above, and describe your gem
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'itamae-plugin-recipe-remi-epel'
+gem 'itamae-plugin-recipe-remi-epel', :github => 'zaru/itamae-plugin-recipe-remi-epel'
 ```
 
 And then execute:
 
     $ bundle
-
-Or install it yourself as:
-
-    $ gem install itamae-plugin-recipe-remi-epel
 
 ## Usage
 
@@ -33,4 +29,3 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/itamae-plugin-recipe-remi-epel.
-
