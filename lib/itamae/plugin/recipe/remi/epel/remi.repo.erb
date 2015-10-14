@@ -1,0 +1,69 @@
+# Repository: http://rpms.remirepo.net/
+# Blog:       http://blog.remirepo.net/
+# Forum:      http://forum.remirepo.net/
+
+[remi]
+name=Remi's RPM repository for Enterprise Linux <%= @version %> - $basearch
+#baseurl=http://rpms.remirepo.net/enterprise/<%= @version %>/remi/$basearch/
+mirrorlist=http://rpms.remirepo.net/enterprise/<%= @version %>/remi/mirror
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-remi
+priority=1
+
+[remi-php55]
+name=Remi's PHP 5.5 RPM repository for Enterprise Linux <%= @version %> - $basearch
+#baseurl=http://rpms.remirepo.net/enterprise/<%= @version %>/php55/$basearch/
+mirrorlist=http://rpms.remirepo.net/enterprise/<%= @version %>/php55/mirror
+# WARNING: If you enable this repository, you must also enable "remi"
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-remi
+priority=1
+
+[remi-php56]
+name=Remi's PHP 5.6 RPM repository for Enterprise Linux <%= @version %> - $basearch
+#baseurl=http://rpms.remirepo.net/enterprise/<%= @version %>/php56/$basearch/
+mirrorlist=http://rpms.remirepo.net/enterprise/<%= @version %>/php56/mirror
+# WARNING: If you enable this repository, you must also enable "remi"
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-remi
+priority=1
+
+[remi-test]
+name=Remi's test RPM repository for Enterprise Linux <%= @version %> - $basearch
+#baseurl=http://rpms.remirepo.net/enterprise/<%= @version %>/test/$basearch/
+mirrorlist=http://rpms.remirepo.net/enterprise/<%= @version %>/test/mirror
+# WARNING: If you enable this repository, you must also enable "remi"
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-remi
+
+[remi-debuginfo]
+name=Remi's RPM repository for Enterprise Linux <%= @version %> - $basearch - debuginfo
+baseurl=http://rpms.remirepo.net/enterprise/<%= @version %>/debug-remi/$basearch/
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-remi
+
+[remi-php55-debuginfo]
+name=Remi's PHP 5.5 RPM repository for Enterprise Linux <%= @version %> - $basearch - debuginfo
+baseurl=http://rpms.remirepo.net/enterprise/<%= @version %>/debug-php55/$basearch/
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-remi
+
+[remi-php56-debuginfo]
+name=Remi's PHP 5.6 RPM repository for Enterprise Linux <%= @version %> - $basearch - debuginfo
+baseurl=http://rpms.remirepo.net/enterprise/<%= @version %>/debug-php56/$basearch/
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-remi
+
+[remi-test-debuginfo]
+name=Remi's test RPM repository for Enterprise Linux <%= @version %> - $basearch - debuginfo
+baseurl=http://rpms.remirepo.net/enterprise/<%= @version %>/debug-test/$basearch/
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-remi
